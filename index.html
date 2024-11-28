@@ -1,19 +1,984 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>HTML, CSS, and JS Example</title>
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-  <h1>Welcome to My Webpage</h1>
-  <p>Click the button below to see an alert message:</p>
-  <button id="alertButton">Click Me!</button>
+  <meta charset="UTF-8"></meta>
 
-  <script >document.getElementById('alertButton').addEventListener('click', function() {
-  alert('Hello! This is a JavaScript alert!');
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  ></meta>
+
+  <title>
+    Sui Southern Gas Company Limited
+  </title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Font Awesome for social icons -->
+
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+  ></link>
+
+  <link
+    href="https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,800,900"
+    rel="stylesheet"
+  ></link>
+
+  <link
+    rel="stylesheet"
+    href="style.css"
+  ></link>
+</head>
+
+<body>
+  <!-- Header Section -->
+
+  <header class="fixed top-0 left-0 w-full text-sky-900 z-50">
+    <div class="flex justify-end items-center p-2 text-sm bg-white space-x-6 h-7 shadow-md">
+      <!-- LPG Order Button -->
+      <a class="text-red-600 font-bold px-4 py-2 blink">LPG ORDER NOW</a>
+  
+      <div class="flex items-center space-x-4">
+        <span class="flex items-center space-x-1">
+          <i class="fa-solid fa-phone" style="color: #1c2b65"></i>
+          <span>1199, 99021000</span>
+        </span>
+  
+        <span class="flex items-center space-x-1">
+          <i class="fas fa-envelope" style="color: #1c2b65"></i>
+          <span>info@ssgc.com.pk</span>
+        </span>
+  
+        <!-- Social Media Icons -->
+        <a href="#" class="hover:text-blue-300">
+          <i class="fab fa-twitter" style="color: #1c2b65"></i>
+        </a>
+  
+        <a href="#" class="hover:text-blue-300">
+          <i class="fab fa-facebook-f" style="color: #1c2b65"></i>
+        </a>
+  
+        <!-- Language Toggle -->
+        <div class="flex items-center space-x-2">
+          <span>English</span>
+  
+          <label class="relative inline-flex items-center cursor-pointer">
+            <input type="checkbox" class="sr-only peer" />
+            <div class="w-10 h-4 bg-gray-300 rounded-full peer-checked:bg-blue-900"></div>
+            <span class="absolute left-0.5 top-0 w-4 h-4 bg-white rounded-full transition-transform peer-checked:translate-x-5"></span>
+          </label>
+  
+          <span>Urdu</span>
+        </div>
+      </div>
+    </div>
+  </header>
+  
+  <!-- Navbar Section -->
+  <nav class="navbar fixed top-7 w-full z-40">
+    <div class="logo-container">
+      <div class="logo">
+        <img src="pics/SSGC_Log.png" alt="SSGC logo" class="h-10">
+      </div>
+      <div class="logo-text">
+        <h1>Service with Smile</h1>
+        <h1 class="uppercase font-bold">
+          Sui Southern Gas Company Limited
+        </h1>
+      </div>
+    </div>
+  
+    <ul>
+      <li ><a href="#" class="active">Home</a></li>
+      <li><a href="#">About Us</a></li>
+      <li><a href="#">Financial Highlights</a></li>
+      <li><a href="#">Customer Management</a></li>
+      <li><a href="#">Investor Info</a></li>
+      <li><a href="#">New Connection</a></li>
+      <li><a href="#">Tenders</a></li>
+      <li><a href="#">Media Center</a></li>
+      <li><a href="#">Helpline</a></li>
+      <li><a href="#">R&D Dept</a></li>
+    </ul>
+  
+    <i class="fas fa-search mr-10 top-13 text-blue-100"></i>
+  </nav>
+  
+  <!-- Main Content Section -->
+  <main class="mt-24">
+  <div class="slider-container top-2">
+    <div
+      class="slider"
+      id="slider"
+    >
+      <!-- Duplicate last slide for smooth transition -->
+
+      <div class="slide">
+        <img
+          src="pics/image4.png"
+          alt="Slide 4"
+        >
+      </div>
+
+      <!-- Slides -->
+
+      <div class="slide">
+        <img
+          src="pics/image1.png"
+          alt="Slide 1"
+        >
+      </div>
+
+      <div class="slide">
+        <img
+          src="pics/image2.png"
+          alt="Slide 2"
+        >
+      </div>
+
+      <div class="slide">
+        <img
+          src="pics/image3.png"
+          alt="Slide 3"
+        >
+      </div>
+
+      <div class="slide">
+        <img
+          src="pics/image4.png"
+          alt="Slide 4"
+        >
+      </div>
+
+      <!-- Duplicate first slide for smooth transition -->
+
+      <div class="slide">
+        <img
+          src="pics/image1.png"
+          alt="Slide 1"
+        >
+      </div>
+    </div>
+
+    <!-- Navigation buttons -->
+
+    <button
+      class="prev"
+      onclick="moveSlide(-1)"
+    >&#10094;</button>
+
+    <button
+      class="next"
+      onclick="moveSlide(1)"
+    >&#10095;</button>
+  </div>
+
+
+  <div class="marquee">
+    <p>
+      CONICAL BAFFLE INSTALLATION CHARGES
+    </p>
+  </div>
+
+  <div class="menu-bar">
+    <!-- Careers -->
+
+    <div class="menu-item">
+      <a href="https://www.ssgc.com.pk/careers/">
+        <img
+          src="pics/1.png"
+          alt="Careers Icon"
+          class="highlighted"
+        >
+
+        <span>Careers</span>
+      </a>
+    </div>
+
+    <!-- Pay/View Bill -->
+
+    <div class="menu-item"> 
+      <a href="https://viewbill.ssgc.com.pk/web/">
+        <img
+          src="pics/2.png"
+          alt="Pay/View Bill Icon"
+        >
+
+        <span>Pay/View Bill</span>
+      </a>
+    </div>
+
+    <!-- Register for E-Bill -->
+
+    <div class="menu-item">
+      <a href="https://www.ssgc.com.pk/web/?page_id=113018">
+        <img
+          src="pics/3a.png"
+          alt="Register for E-Bill Icon"
+          class="highlighted"
+        >
+
+        <span>Register for E-Bill</span>
+      </a>
+    </div>
+
+    <!-- Gas Tariff/Rates -->
+
+    <div class="menu-item">
+      <a href="https://www.ssgc.com.pk/web/?page_id=1178">
+        <img
+          src="pics/4a.png"
+          alt="Gas Tariff/Rates Icon"
+          class="highlighted"
+        >
+
+        <span>Gas Tariff/Rates</span>
+      </a>
+    </div>
+
+    <!-- RLNG Domestic -->
+
+    <div class="menu-item">
+      <a href="https://www.ssgc.com.pk/web/wp-content/uploads/2024/07/rlng_domestic_connection_form_jul_2024.pdf">
+        <img
+          src="pics/5.png"
+          alt="RLNG Domestic Icon"
+          class="highlighted "
+        >
+
+        <span class="rnlg">
+          RLNG Domestic Gas Connection Forms
+          
+          & Approved Societies lists &
+            Details
+        </span>
+      </a>
+    </div>
+
+    <!-- Meter Manufacturing Plant -->
+
+    <div class="menu-item">
+      <a href="https://www.ssgc.com.pk/web/?page_id=113199">
+        <img
+          src="pics/6.png"
+          alt="Meter Manufacturing Icon"
+        >
+
+        <span>Meter Manufacturing Plant</span>
+      </a>
+    </div>
+
+    <!-- Complaints/Feedback -->
+
+    <div class="menu-item">
+      <a href="https://www.ssgc.com.pk/web/?page_id=132">
+        <img
+          src="pics/7a.png"
+          alt="Complaints/Feedback Icon"
+        >
+
+        <span>Complaints/Feedback</span>
+      </a>
+    </div>
+
+    <!-- Defaulters' List -->
+
+    <div class="menu-item">
+      <a href="https://www.ssgc.com.pk/web/wp-content/uploads/2024/02/2024_01_jan_defaulters_list.pdf">
+        <img
+          src="pics/8.png"
+          alt="Defaulters List Icon"
+        >
+
+        <span>Defaulters' List</span>
+      </a>
+    </div>
+  </div>
+
+  <div class="image-container">
+    <img
+      src="pics/pak.png"
+      alt="Image 1"
+    class="rounded-3xl shadow-md shadow-black		"
+    width="36%"
+      >
+
+    <img
+      src="pics/register.jpg"
+      alt="Image 2"
+    width="36%"
+    class="rounded-3xl shadow-md shadow-black		"
+
+    >
+  </div>
+
+  <!-- Carousel Container -->
+
+  <div class="carousel-container container mx-auto">
+    <!-- Title and News Navigation Arrows -->
+
+    <div class="carousel-header ">
+      <div class="carousel-title col-12 col-md-6">COMPANY NEWS</div>
+
+      <div class="carousel-news-arrows col-12 col-md-6 d-flex justify-content-center">
+        <div
+          class="arrow older-news"
+          onclick="loadOlderNews()"
+        >&#10094;</div>
+
+        <div class="dots">
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+        </div>
+
+        <div
+          class="arrow newer-news"
+          onclick="loadNewerNews()"
+        >&#10095;</div>
+      </div>
+    </div>
+
+    <!-- Carousel with news cards -->
+
+    <div class="carousel-wrapper">
+      <div class="news-card">
+        <img
+          src="pics/n3.jpg"
+          alt="News Image 3"
+          class="news-image"
+        >
+  
+        <div class="news-content">
+          <div class="news-title" data-full-text="24-hours Gas Holiday for all Industries Including their Power Generation Units and all CNG Stations in Sindh">24-hour Gas Holiday...</div>
+  
+          <div class="news-date">August 22, 2024</div>
+  
+          <a
+            href="#"
+            class="read-more-btn"
+          >Read More... &#8250;</a>
+        </div>
+      </div>
+      
+      <div class="news-card">
+        <img
+          src="pics/n2.jpeg"
+          alt="News Image 2"
+          class="news-image"
+        >
+
+        <div class="news-content">
+          <div class="news-title" data-full-text="SSGC Disconnects 3,276 Illegal Gas Connections in Sindh and Balochistan">SSGC Disconnects 3,276...</div>
+          
+          <div class="news-date">September 4, 2024</div>
+          
+          <a
+          href="#"
+          class="read-more-btn"
+          >Read More... &#8250;</a>
+        </div>
+      </div>
+
+      <div class="news-card">
+        <img
+          src="pics/n1.jpg"
+          alt="News Image 1"
+          class="news-image"
+        >
+
+        <div class="news-content">
+          <div class="news-title" data-full-text="SSGC media R">SSGC media R</div>
+
+          <div class="news-date">September 8, 2024</div>
+
+          <a
+            href="#"
+            class="read-more-btn"
+          >Read More... &#8250;</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+
+
+  <!-- <div class="section over-hide"> -->
+
+  <div
+    class="container flex justify-evenly mx-auto"
+    
+  >
+    <div class="row justify-content-center">
+      <div class="text-center align-self-center py-5">
+        <div class="section text-center py-5">
+          <input
+            class="pricing"
+            type="checkbox"
+            id="pricing"
+            name="pricing"
+          ></input>
+
+          <label for="pricing">
+            <span class="block-diff">
+              View Bill
+
+              <span class="float-left">Bill Payment</span>
+            </span>
+          </label>
+
+          <div class="card-3d-wrap mx-auto">
+            <div class="card-3d-wrapper">
+              <!-- Front Side of the Flip Card -->
+
+              <div class="card-front">
+                <div class="pricing-wrap">
+                  <h4 class="mb-5">View Your Bill</h4>
+
+                  <p class="mb-4">
+                    View and download your monthly gas bill in PDF format. Requires Adobe Acrobat Reader
+                  </p>
+
+                  <a
+                    href="https://viewbill.ssgc.com.pk/web/"
+                    target="_blank"
+                    class="link"
+                  >View Bill</a>
+
+                  <div class="img-wrap img-2">
+                    <img
+                      src="https://assets.codepen.io/1462889/sea.png"
+                      alt=""
+                    >
+                  </div>
+                </div>
+              </div>
+
+              <!-- Back Side of the Flip Card -->
+
+              <div class="card-back">
+                <div class="pricing-wrap">
+                  <h4 class="mb-5">Payment Solutions</h4>
+
+                  <p class="mb-4">
+                    A number of convenient payment options are available for bill payment. Click for more details.
+                  </p>
+
+                  <a
+                    href="https://www.ssgc.com.pk/web/?page_id=52"
+                    target="_blank"
+                    class="link"
+                  >Bill Payment options</a>
+
+                  <div class="img-wrap img-2">
+                    <img
+                      src="https://assets.codepen.io/1462889/sea.png"
+                      alt=""
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- </div> -->
+    <!-- Second Card (Ads) -->
+
+    <div class="card-3d-wrap" style="height: 470px;">
+      <h4 class="card-heading">OUR LATEST AD</h4>
+
+        <div class="ad-section" style="top:45px">
+          <img src="pics/hosh.png" alt="Ad Image">
+        </div>
+      </div>
+      </div>
+    </div>
+  
+  
+    <div class="locate-us-section mx-auto">
+      <h2 class="locate-us-heading">Locate Us</h2>
+      <div class="map-card">
+        <div class="map-header">
+          <p>ST-4/B Hassan Square Flyover, Block 14, Gulshan-e-Iqbal, Karachi</p>
+        </div>
+        <div class="map-body">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3618.9727696514433!2d67.07264107607575!3d24.898910443716506!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb33eded8bffe2f%3A0x682017baa626d578!2sSui%20Southern%20Gas%20Company%20Ltd.%20(SSGC)!5e0!3m2!1sen!2s!4v1730717835541!5m2!1sen!2s"
+            width="100%"
+            height="300"
+            allowfullscreen=""
+            loading="lazy"
+            style="border-radius: 10px; border: none; box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);"
+          ></iframe>
+        </div>
+      </div>
+    </div>
+  
+
+  <!-- <h2 class="business-partner-heading">Our Business Partners</h2> -->
+  <h2 class="business-partner-heading flex justify-center">Our Business Partners</h2>
+  <div class="slider-image">
+    <button id="scroll-left" class="scroll-button left-button">&minus;</button>
+  
+    <div class="slide-track">
+      
+      <a href="" class="slide-img">
+        <img class="" src="./pics/logo_abl.png" alt="">
+      </a>
+  
+      <a href="" class="slide-img">
+        <img class="" src="./pics/logo_askaribank.png" alt="">
+      </a>
+      <a href="" class="slide-img">
+        <img class="" src="./pics/logo_bankalfalah.png" alt="">
+      </a>
+      <a href="" class="slide-img">
+        <img class="" src="./pics/logo_bankalhabib.png" alt="">
+      </a>
+      <a href="" class="slide-img">
+        <img class="" src="./pics/logo_bankislami.png" alt="">
+      </a>
+      
+      <a href="https://easypaisa.com.pk/" class="slide-img">
+        <img class="" src="./pics/logo_easypaisa.png" alt="easypaisa">
+      </a>
+      <a href="" class="slide-img">
+        <img class="" src="./pics/logo_faysalbank.png" alt="">
+      </a>
+      <a href="" class="slide-img">
+        <img class="" src="./pics/logo_hmb.png" alt="">
+      </a>
+      <a href="" class="slide-img">
+        <img class="" src="./pics/logo_hbl.png" alt="">
+      </a>
+      <a href="" class="slide-img">
+        <img class="" src="./pics/logo_hblexpress.png" alt="">
+      </a>
+      
+      <a href="" class="slide-img">
+        <img class="" src="./pics/logo_mcb.png" alt="">
+      </a>
+      
+      <a href="https://www.jazzcash.com.pk/" class="slide-img">
+        <img class="" src="./pics/Jazz-cash-logo24.png" alt="">
+      </a>
+      <a href="" class="slide-img">
+        <img class="" src="./pics/logo_standardchartered.png" alt="">
+      </a>
+      
+      <a href="" class="slide-img">
+        <img class="" src="./pics/logo_timepey.png" alt="">
+      </a>
+      <a href="" class="slide-img">
+        <img class="" src="./pics/logo_ubank.png" alt="">
+      </a>
+      <a href="" class="slide-img">
+        <img class="" src="./pics/logo_ubl.png" alt="">
+      </a>
+      <a href="" class="slide-img">
+        <img class="" src="./pics/logo_ublomni.png" alt="">
+      </a>
+      
+      
+      <!-- Duplicate the content to create seamless loop -->
+      <a href="" class="slide-img">
+        <img class="" src="./pics/logo_abl.png" alt="">
+      </a>
+  
+      <a href="" class="slide-img">
+        <img class="" src="./pics/logo_askaribank.png" alt="">
+      </a>
+      <a href="" class="slide-img">
+        <img class="" src="./pics/logo_bankalfalah.png" alt="">
+      </a>
+      <a href="" class="slide-img">
+        <img class="" src="./pics/logo_bankalhabib.png" alt="">
+      </a>
+      <a href="" class="slide-img">
+        <img class="" src="./pics/logo_bankislami.png" alt="">
+      </a>
+      
+      <a href="https://easypaisa.com.pk/" class="slide-img">
+        <img class="" src="./pics/logo_easypaisa.png" alt="easypaisa">
+      </a>
+      <a href="" class="slide-img">
+        <img class="" src="./pics/logo_faysalbank.png" alt="">
+      </a>
+      <a href="" class="slide-img">
+        <img class="" src="./pics/logo_hmb.png" alt="">
+      </a>
+      <a href="" class="slide-img">
+        <img class="" src="./pics/logo_hbl.png" alt="">
+      </a>
+      <a href="" class="slide-img">
+        <img class="" src="./pics/logo_hblexpress.png" alt="">
+      </a>
+      
+      <a href="" class="slide-img">
+        <img class="" src="./pics/logo_mcb.png" alt="">
+      </a>
+      
+      <a href="https://www.jazzcash.com.pk/" class="slide-img">
+        <img class="" src="./pics/Jazz-cash-logo24.png" alt="">
+      </a>
+      <a href="" class="slide-img">
+        <img class="" src="./pics/logo_standardchartered.png" alt="">
+      </a>
+      
+      <a href="" class="slide-img">
+        <img class="" src="./pics/logo_timepey.png" alt="">
+      </a>
+      <a href="" class="slide-img">
+        <img class="" src="./pics/logo_ubank.png" alt="">
+      </a>
+      <a href="" class="slide-img">
+        <img class="" src="./pics/logo_ubl.png" alt="">
+      </a>
+      <a href="" class="slide-img">
+        <img class="" src="./pics/logo_ublomni.png" alt="">
+      </a>
+      
+    
+    </div>
+    <button id="scroll-right" class="scroll-button right-button">&plus;</button>
+      
+  </div>
+  <div class="focal-persons-section">
+    <div class="focal-person-info">
+      <h3>
+        Focal Persons as per Right of Access to Information Act 2017 and Prime Minister Delivery Unit, SSGC
+      </h3>
+      <div class="info-card">
+        <div class="card-header">
+          <p><strong>Mr. Amir Mumtaz Khan</strong></p>
+        </div>
+        <div class="card-body">
+          <p>General Manager (Coordination)</p>
+          <p>Sui Southern Gas Co. Ltd.</p>
+          <p>Sir Shah Suleman Road, Gulshan-e-Iqbal, Karachi.</p>
+          <p><i class="fas fa-phone"></i> Tel: +9221-99224713</p>
+          <p><i class="fas fa-envelope"></i> Email: amir.mumtaz@ssgc.com.pk</p>
+        </div>
+      </div>
+    </div>
+  
+    <!-- Investor Queries Section -->
+    <div class="focal-person-investor">
+      <h3>Investor Queries/Grievances</h3>
+      <div class="investor-box-container">
+        <div class="info-card">
+          <div class="card-header">
+            <p><strong>Mr. Altaf Jatoi</strong></p>
+          </div>
+          <div class="card-body">
+            <p>Manager Board Secretariat</p>
+            <p><i class="fas fa-envelope"></i> Email: altaf.jatoi@ssgc.com.pk</p>
+            <p><i class="fas fa-phone"></i> Phone: 021-99021743</p>
+          </div>
+        </div>
+        <div class="info-card">
+          <div class="card-header">
+            <p><strong>Syed Atif Sarwat</strong></p>
+          </div>
+          <div class="card-body">
+            <p>Deputy Manager Shares</p>
+            <p><i class="fas fa-envelope"></i> Email: atif.sarwat@ssgc.com.pk</p>
+            <p><i class="fas fa-phone"></i> Phone: 021-99021021</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <footer class="footer">
+    <div class="footer-content">
+      <!-- Address Section -->
+      <div class="footer-section address">
+        <h3 class="footer-heading">Our Address</h3>
+        <p>
+          <i class="fas fa-home"></i>
+          ST-4/B, Block 14, Sir Shah Suleman Road, Gulshan-e-Iqbal, Karachi.
+        </p>
+        <p>
+          <i class="fas fa-phone"></i>
+          (+9221) 9902 1000
+        </p>
+        <p>
+          <i class="fas fa-envelope"></i>
+          info@ssgc.com.pk
+        </p>
+        <p>
+          <i class="fas fa-globe"></i>
+          www.ssgc.com.pk
+        </p>
+      </div>
+  
+      <!-- Links Section -->
+      <div class="footer-section links">
+        <h3 class="footer-heading">Links</h3>
+        <ul>
+          <li>
+            <span class="arrows">&#9656;</span>
+            <a href="https://www.ssgc.com.pk/web/?page_id=68">About Us</a>
+          </li>
+          <li>
+            <span class="arrows">&#9656;</span>
+            <a href="https://www.ssgc.com.pk/web/?page_id=85">Financial Highlights</a>
+          </li>
+          <li>
+            <span class="arrows">&#9656;</span>
+            <a href="https://www.ssgc.com.pk/web/?page_id=90">Infrastructure</a>
+          </li>
+          <li>
+            <span class="arrows">&#9656;</span>
+            <a href="https://www.ssgc.com.pk/web/?page_id=103">Customer Management</a>
+          </li>
+          <li>
+            <span class="arrows">&#9656;</span>
+            <a href="https://www.ssgc.com.pk/web/?page_id=52">Bill Payment Options</a>
+          </li>
+          <li>
+            <span class="arrows">&#9656;</span>
+            <a href="https://www.ssgc.com.pk/web/?page_id=132">Complaints/Feedback</a>
+          </li>
+        </ul>
+      </div>
+  
+      <!-- Recent Views Section -->
+      <div class="footer-section recent-views">
+        <h3 class="footer-heading">Recent Views</h3>
+        <ul>
+          <li>
+            <span class="arrows">&#9656;</span>
+            <a href="https://www.ssgc.com.pk/web/?p=115623">SSGC MEDIA RELEASE</a>
+          </li>
+          <li>
+            <span class="arrows">&#9656;</span>
+            <a href="https://www.ssgc.com.pk/web/?p=115618">SSGC Disconnects 3,276 Illegal Gas Connections in Sindh and Balochistan</a>
+          </li>
+          <li>
+            <span class="arrows">&#9656;</span>
+            <a href="#">24-hours Gas Holiday for all Industries Including their Power Generation Units and all CNG Stations in Sindh</a>
+          </li>
+          <li>
+            <span class="arrows">&#9656;</span>
+            <a href="#">1 Arrested for Gas Theft, 809 Disconnections Made</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  
+    <!-- Logo Section -->
+    <div class="footer-logo-section">
+      <div class="horizontal-line"></div>
+      <div class="footer-logo-box">
+        <img src="pics/SSGC_Log.png" alt="SSGC Logo" class="footer-logo">
+        <p>SSGC</p>
+      </div>
+      <div class="horizontal-line"></div>
+    </div>
+  
+    <!-- Footer Bottom -->
+    <div class="footer-bottom">
+      <p>
+        &copy; Copyright 2024 | Sui Southern Gas Company Limited. Updated: November, 2024
+      </p>
+    </div>
+  </footer>
+  </main>
+
+  <script>
+    let currentIndex = 1; // Start from the first actual slide
+      const slider = document.getElementById("slider");
+      document.get
+      const slides = document.querySelectorAll(".slide");
+      const totalSlides = slides.length;
+    
+      function moveSlide(direction) {
+        currentIndex += direction;
+    
+        // Smooth looping logic
+        slider.style.transition = "transform 0.5s ease";
+        slider.style.transform = `translateX(-${currentIndex * 100}%)`;
+    
+        // Reset without transition for seamless loop
+        if (currentIndex === 0) {
+          setTimeout(() => {
+            slider.style.transition = "none";
+            currentIndex = totalSlides - 2; // Move to last actual slide
+            slider.style.transform = `translateX(-${currentIndex * 100}%)`;
+          }, 500); // Match transition duration
+        } else if (currentIndex === totalSlides - 1) {
+          setTimeout(() => {
+            slider.style.transition = "none";
+            currentIndex = 1; // Move to first actual slide
+            slider.style.transform = `translateX(-${currentIndex * 100}%)`;
+          }, 500); // Match transition duration
+        }
+      }
+    
+      // Initialize position
+      slider.style.transform = `translateX(-${currentIndex * 100}%)`;
+      
+      
+      const newsData = [
+  {
+    title: "Towards a Greener Tomorrow – Environment Excellence Award for SSGC",
+    date: "August 8, 2024",
+    image: "pics/n7.jpg",
+    link: "#"
+  },
+  {
+    title: "Independence Day Celebrations",
+    date: "August 14, 2024",
+    image: "pics/n5.jpg",
+    link: "#"
+  },
+  {
+    title: "1 Arrested for Gas Theft, 809 Disconnections Made",
+    date: "August 21, 2024",
+    image: "pics/n4.jpeg",
+    link: "#"
+  },
+  {
+    title: "24-hours Gas Holiday for all Industries Including their Power Generation Units and all CNG Stations in Sindh",
+    date: "August 22, 2024",
+    image: "pics/n3.jpg",
+    link: "#"
+  },
+  {
+    title: "SSGC Disconnects 3,276...",
+    date: "September 4, 2024",
+    image: "pics/n2.jpeg",
+    link: "#"
+  },
+  {
+    title: "SSGC media R",
+    date: "September 8, 2024",
+    image: "pics/n1.jpg",
+    link: "#"
+  },
+];
+
+let startIndex = newsData.length - 3; // Initially show the last 3 cards
+
+function renderNews() {
+  const carouselWrapper = document.querySelector(".carousel-wrapper");
+  const olderNewsButton = document.querySelector(".older-news");
+  const newerNewsButton = document.querySelector(".newer-news");
+
+  // Clear current news cards
+  carouselWrapper.innerHTML = "";
+
+  // Render news cards
+  for (let i = startIndex; i < startIndex + 3; i++) {
+    if (i >= 0 && i < newsData.length) {
+      const news = newsData[i];
+
+      const newsCard = `
+        <div class="news-card">
+          <img src="${news.image}" alt="News Image" class="news-image">
+          <div class="news-content">
+            <div class="news-title">${news.title}</div>
+            <div class="news-date">${news.date}</div>
+            <a href="${news.link}" class="read-more-btn">Read More... &#8250;</a>
+          </div>
+        </div>
+      `;
+      carouselWrapper.innerHTML += newsCard;
+    }
+  }
+
+  // Add full title to data-full-text attribute after rendering news
+  document.querySelectorAll(".news-title").forEach((element, index) => {
+    const globalIndex = startIndex + index; // Map to correct `newsData` index
+    if (globalIndex < newsData.length) {
+      element.setAttribute("data-full-text", newsData[globalIndex].title);
+    }
+  });
+
+  // Enable or disable Older News button
+  if (startIndex <= 0) {
+    olderNewsButton.disabled = true;
+    olderNewsButton.style.opacity = "0.5";
+    olderNewsButton.style.cursor = "not-allowed";
+  } else {
+    olderNewsButton.disabled = false;
+    olderNewsButton.style.opacity = "1";
+    olderNewsButton.style.cursor = "pointer";
+  }
+
+  // Enable or disable Newer News button
+  if (startIndex + 3 >= newsData.length) {
+    newerNewsButton.disabled = true;
+    newerNewsButton.style.opacity = "0.5";
+    newerNewsButton.style.cursor = "not-allowed";
+  } else {
+    newerNewsButton.disabled = false;
+    newerNewsButton.style.opacity = "1";
+    newerNewsButton.style.cursor = "pointer";
+  }
+}
+
+function loadOlderNews() {
+  if (startIndex > 0) {
+    startIndex--; // Move window one step back
+    renderNews();
+  }
+}
+
+function loadNewerNews() {
+  if (startIndex + 3 < newsData.length) {
+    startIndex++; // Move window one step forward
+    renderNews();
+  }
+}
+
+// Wait for DOM to load before running the script
+
+document.addEventListener("DOMContentLoaded", ()=> {
+  renderNews(); // Initial render
+
+  const slideTrack = document.querySelector(".slide-track");
+  let currentDuration = 40; // Initial animation duration in seconds
+
+  // Function to update animation duration
+  function updateAnimationDuration(newDuration) {
+    currentDuration = newDuration;
+    slideTrack.style.animationDuration = `${currentDuration}s`;
+  }
+
+  // Event listener for right button (+ button) to increase speed (decrease duration)
+  document.getElementById("scroll-right").addEventListener("click", function () {
+    if (currentDuration > 3) {
+      updateAnimationDuration(currentDuration - 3); // Decrease duration by 3s (speed up)
+    }
+  });
+
+  // Event listener for left button (- button) to decrease speed (increase duration)
+  document.getElementById("scroll-left").addEventListener("click", function () {
+    updateAnimationDuration(currentDuration + 3); // Increase duration by 3s (slow down)
+  });
+  
+  const links = document.querySelectorAll(".navbar ul li a");
+  
+  links.forEach(link => {
+    link.addEventListener("click", () => {
+      // Remove 'active' class from all links
+      links.forEach(l => l.classList.remove("active"));
+      
+      // Add 'active' class to the clicked link
+      link.classList.add("active");
+    });
+  });
 });
+
 </script>
 </body>
 </html>
